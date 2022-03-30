@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# This file is run on dns ip changed.
+# 
+# Receives two parameters
+#    $1 = Old ip
+#    $2 = New ip
+
+# Example:
+#
+# out="ip changed, updating from $1 to $2"
+# echo "$out" "ip updated"

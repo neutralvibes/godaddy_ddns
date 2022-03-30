@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# This file runs when the dns updater fails.
+
+# Example:
+#
+# echo "$1 dns_updater failed"

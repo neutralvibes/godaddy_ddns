@@ -1,0 +1,57 @@
+# First go to GoDaddy developer site to create a developer account and get your key and secret
+#
+# https://developer.godaddy.com/getstarted
+#
+# NOTE: Key and secret - test server and production server.
+# Get a key and secret for both the test & production server.
+#
+# Enter vaules for all variables, Latest API call requries them.
+
+#
+# Key for godaddy developer LIVE api
+#
+LIVE_KEY="YOUR-LIVE-KEY-HERE"
+
+#
+# Secret for godaddy developer LIVE api
+#
+LIVE_SECRET="YOUR-LIVE-SECRET-HERE"
+
+#
+# Key for godaddy developer TEST api
+#
+TEST_KEY="YOUR-TEST-KEY-HERE"
+
+#
+# Secret for godaddy developer TEST API
+#
+TEST_SECRET="YOUR-TEST-SECRET-HERE"
+
+#
+# Name of the domain the record belongs to
+#
+DOMAIN_NAME="your-domain.com"
+
+#
+# Subdomain name to check and update
+#
+DOMAIN_RECORD="your-subdomain"
+
+#
+# Url of external ip address resolver.
+#
+EXTERNAL_IP_PROVIDER="https://api64.ipify.org"
+
+#
+# Function to get external ip - should just return the ip
+#
+get_external_IP() {
+  echo $(curl -s $EXTERNAL_IP_PROVIDER)
+}
+
+
+# LIVE_MODE
+# 1 = use live api changes/ 0 = use test api
+#
+LIVE_MODE=1
+
