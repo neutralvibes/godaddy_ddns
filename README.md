@@ -14,7 +14,7 @@ The script uses https://api64.ipify.org to identify your external ip address and
 ### Grab the code
 
 ```bash
-git clone https://github.com/neutralvibes/godaddy_ddns.git
+git clone --depth 1 https://github.com/neutralvibes/godaddy_ddns.git
 cd godaddy_ddns
 
 # set execute bit
