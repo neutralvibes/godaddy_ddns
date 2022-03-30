@@ -2,9 +2,11 @@
 
 ## Introduction
 
-Mapping your private networks public facing ip address to a domain name is a requirement many people have. If you have purchased a domain name from GoDaddy, this will easily allow you to keep a sub domain name pointing to that ip address without any additional cost. The only requirement otherwise is having a linux machine to schedule the updating from.
+Mapping your private networks public facing ip address to a domain name is a requirement many people have. If you have purchased a domain name from GoDaddy, this will easily allow you to keep a sub domain name pointing to that ip address without any additional cost. 
 
-The script uses https://api64.ipify.org to identify your external ip address and checks it against the ip your chosen subdomain name is set to. If the differ it will update the subdomain address to the current value.
+The only requirement other than a GoDaddy managed domain is having a Linux machine on the private network to schedule the checking/updating from.
+
+The script uses https://api64.ipify.org to identify your external ip address and checks it against the ip your chosen subdomain name is set to. If they differ it will update the subdomain address to the current value.
 
 
 ## Getting started
