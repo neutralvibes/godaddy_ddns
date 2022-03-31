@@ -25,7 +25,7 @@ chmod +x ddns_updater on_change on_fail
 
 2. Create your API Key and Secret for testing and live
 
-3. Update the sections in the config file for you **keys**, **secrets**, main **domain name** and **sub domain** to be used.
+3. Update the sections in the config file for your **keys**, **secrets**, main **domain name** and **sub domain** to be used.
 
 ### Set live or test mode?
 
@@ -54,11 +54,17 @@ currentIp: xxx.xxx.xxx.xxx
 There are two files `on_change` and `on_failure` whose names are self explanatory. You can edit these files to enable your desired action to take place on the condition the file name suggests. For instance, I use them to send a pushover message to my phone.
 
 
-### Last of all
+### Scheduling
 
-Once you have it working, setting up a cron job every 15 minutes or so should  keep things nicely in step.
+Once you have it working, setting up a cron job every 15 minutes or so should  keep things nicely in step. Using the following in the crontab file will do it.
+
+```
+*/15 * * * * /path_to/godaddy_ddns/ddns_updater run-silent
+```
+
+*Don't forget to change `path_to` to the directory containing `godaddy_ddns`.*
 
 ## Credits
 
-Special thanks to mfox for his ps script
+Special thanks to markafox for his ps script
 https://github.com/markafox/GoDaddy_Powershell_DDNS

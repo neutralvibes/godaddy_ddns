@@ -9,7 +9,6 @@ cd "$(dirname "$0")" ; pwd -P
 
 source config
 
-
 getTime() {
     local NOW=$(date --rfc-3339=seconds)
     echo ${NOW:0:19}
@@ -39,7 +38,6 @@ RETRIES=3
 # Time to sleep between GoDaddy retries (seconds)
 #
 RETRY_TIME=15
-
 
 type="A"			# Record type A, CNAME, MX, etc.
 port="1"            # Required port, Min value 1
